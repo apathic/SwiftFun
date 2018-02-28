@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14101" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,47 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftFun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-Ws-1qi">
+                                <rect key="frame" x="115.5" y="229.5" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-2h-Lvw">
+                                <rect key="frame" x="130.5" y="270.5" width="59" height="30"/>
+                                <state key="normal" title="Hit Me :)"/>
+                                <connections>
+                                    <action selector="ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="m5b-yw-dOg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-mU-HJu">
+                                <rect key="frame" x="111" y="320.5" width="98" height="30"/>
+                                <state key="normal" title="Reset Counter"/>
+                                <connections>
+                                    <action selector="ResetCounterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lxZ-AK-5tu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FeI-2h-Lvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="335-i8-4qX"/>
+                            <constraint firstItem="FeI-2h-Lvw" firstAttribute="top" secondItem="uzV-Ws-1qi" secondAttribute="bottom" constant="20" id="Eyd-ld-9QD"/>
+                            <constraint firstItem="L0I-mU-HJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNA-tm-Wqu"/>
+                            <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oh1-Og-PXf"/>
+                            <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEA-PB-k8x"/>
+                            <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tJx-5i-Har"/>
+                            <constraint firstItem="L0I-mU-HJu" firstAttribute="top" secondItem="FeI-2h-Lvw" secondAttribute="bottom" constant="20" id="vwd-Ka-Agx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="MyNewLabel" destination="uzV-Ws-1qi" id="z5I-Zg-jb2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
