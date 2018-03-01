@@ -57,27 +57,46 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXN-dn-gTG">
-                                <rect key="frame" x="22" y="211" width="74" height="30"/>
+                                <rect key="frame" x="19" y="211" width="80" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="AddButton"/>
+                                <state key="normal" title="Math Fields"/>
                                 <connections>
                                     <action selector="AddButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OkY-yf-cwd"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUC-bA-8v5">
+                                <rect key="frame" x="135.5" y="99" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB3-h2-pbl">
+                                <rect key="frame" x="90" y="104" width="31" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Subtract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-BG-HrX">
+                                <rect key="frame" x="199" y="104" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FeI-2h-Lvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="335-i8-4qX"/>
+                            <constraint firstItem="sUC-bA-8v5" firstAttribute="leading" secondItem="cB3-h2-pbl" secondAttribute="trailing" constant="14.5" id="7vT-Kq-kB5"/>
                             <constraint firstItem="FeI-2h-Lvw" firstAttribute="top" secondItem="uzV-Ws-1qi" secondAttribute="bottom" constant="20" id="Eyd-ld-9QD"/>
                             <constraint firstItem="L0I-mU-HJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNA-tm-Wqu"/>
                             <constraint firstItem="B6h-yp-zhS" firstAttribute="top" secondItem="s6J-mp-cIA" secondAttribute="bottom" constant="21" id="Ltk-CW-Acq"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oh1-Og-PXf"/>
+                            <constraint firstItem="NPR-BG-HrX" firstAttribute="leading" secondItem="sUC-bA-8v5" secondAttribute="trailing" constant="14.5" id="WRQ-zG-JHb"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEA-PB-k8x"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="top" secondItem="B6h-yp-zhS" secondAttribute="bottom" constant="8.5" id="jjT-FA-gE8"/>
+                            <constraint firstItem="sUC-bA-8v5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeL-cg-JXZ"/>
                             <constraint firstItem="s6J-mp-cIA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tFR-OG-GO9"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tJx-5i-Har"/>
                             <constraint firstItem="B6h-yp-zhS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="teu-Jy-PAu"/>
                             <constraint firstItem="L0I-mU-HJu" firstAttribute="top" secondItem="FeI-2h-Lvw" secondAttribute="bottom" constant="20" id="vwd-Ka-Agx"/>
+                            <constraint firstItem="s6J-mp-cIA" firstAttribute="top" secondItem="sUC-bA-8v5" secondAttribute="bottom" constant="10" id="w4Z-wC-tp0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -85,6 +104,7 @@
                         <outlet property="BottomTextField" destination="B6h-yp-zhS" id="bSd-sd-RQQ"/>
                         <outlet property="MyNewLabel" destination="uzV-Ws-1qi" id="z5I-Zg-jb2"/>
                         <outlet property="TopTextField" destination="s6J-mp-cIA" id="ocx-jb-fg6"/>
+                        <outlet property="addSwitch" destination="sUC-bA-8v5" id="6yi-bu-VUn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
