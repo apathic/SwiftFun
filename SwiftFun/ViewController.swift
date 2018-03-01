@@ -4,10 +4,7 @@
 //
 //  Created by Brian Estep on 2/28/18.
 //  Copyright © 2018 Brian Estep. All rights reserved.
-//
-// New comment here
-// Another new comment
-// Another new comment
+
 
 import UIKit
 
@@ -16,7 +13,13 @@ class ViewController: UIViewController {
     var count = 0;
     var s = ""
     
+    @IBOutlet weak var TopTextField: UITextField!
     @IBOutlet weak var MyNewLabel: UILabel!
+    @IBOutlet weak var BottomTextField: UITextField!
+    
+    @IBAction func AddButton(_ sender: Any) {
+    }
+    
     
     @IBAction func ResetCounterButton(_ sender: Any) {
         count = 0
