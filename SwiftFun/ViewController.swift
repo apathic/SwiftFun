@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     
     @IBAction func AddButton(_ sender: Any) {
         
-        if addSwitch.isOn {
+        if addSwitch.isOn == false {
         d1 = Double(TopTextField.text!)! + Double(BottomTextField.text!)!
         }
         else {

@@ -67,14 +67,14 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sUC-bA-8v5">
                                 <rect key="frame" x="135.5" y="99" width="51" height="31"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB3-h2-pbl">
-                                <rect key="frame" x="90" y="104" width="31" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-BG-HrX">
+                                <rect key="frame" x="199" y="104" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Subtract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPR-BG-HrX">
-                                <rect key="frame" x="199" y="104" width="66" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cB3-h2-pbl">
+                                <rect key="frame" x="88" y="104" width="31" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -86,9 +86,11 @@
                             <constraint firstItem="sUC-bA-8v5" firstAttribute="leading" secondItem="cB3-h2-pbl" secondAttribute="trailing" constant="14.5" id="7vT-Kq-kB5"/>
                             <constraint firstItem="FeI-2h-Lvw" firstAttribute="top" secondItem="uzV-Ws-1qi" secondAttribute="bottom" constant="20" id="Eyd-ld-9QD"/>
                             <constraint firstItem="L0I-mU-HJu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNA-tm-Wqu"/>
+                            <constraint firstItem="NPR-BG-HrX" firstAttribute="centerY" secondItem="sUC-bA-8v5" secondAttribute="centerY" id="KjK-8E-25c"/>
                             <constraint firstItem="B6h-yp-zhS" firstAttribute="top" secondItem="s6J-mp-cIA" secondAttribute="bottom" constant="21" id="Ltk-CW-Acq"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oh1-Og-PXf"/>
                             <constraint firstItem="NPR-BG-HrX" firstAttribute="leading" secondItem="sUC-bA-8v5" secondAttribute="trailing" constant="14.5" id="WRQ-zG-JHb"/>
+                            <constraint firstItem="cB3-h2-pbl" firstAttribute="centerY" secondItem="sUC-bA-8v5" secondAttribute="centerY" id="eqx-VN-0ip"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gEA-PB-k8x"/>
                             <constraint firstItem="uzV-Ws-1qi" firstAttribute="top" secondItem="B6h-yp-zhS" secondAttribute="bottom" constant="8.5" id="jjT-FA-gE8"/>
                             <constraint firstItem="sUC-bA-8v5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qeL-cg-JXZ"/>
